@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" media="screen,projection" />
+    <title>Royal Tea Party</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!--class="navbar-fixed"-->
+    <nav role="navigation">
+        <div class="nav-wrapper">
+            <a href="# " data-activates="nav-mobile" class="button-collapse left_m"><i class="material-icons color-icon">menu</i></a>
+            <a href="main.html" class="brand-logo center"><img class="logo" src="images/logo.png " /></a>
+            <ul class="left_m hide-on-med-and-down">
+                <li class="l"><a href="catalogo.html">CAT&Aacute;LOGO</a></li>
+                <li class="l"><a href="galeria.html">GALER&Iacute;A</a></li>
+            </ul>
+            <ul class="right_m hide-on-med-and-down">
+                <li class="r"><a href="contacto.html">CONTACTO</a></li>
+                <li class="r"><a href="historia.html">HISTORIA</a></li>
+            </ul>
+            <ul class="side-nav " id="nav-mobile">
+                <li><a href="catalogo.html"><h6>CAT&Aacute;LOGO</h6></a></li>
+                <li><a href="galeria.html"><h6>GALER&Iacute;A</h6></a></li>
+                <li><a href="contacto.html"><h6>CONTACTO</h6></a></li>
+                <li><a href="historia.html"><h6>HISTORIA</h6></a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="parallax-container valign-wrapper fade">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="caption left-align">
+                    <h2 class="white-text">Contacto</h2>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img class="contacto" src="images/contacto_1.jpg" alt="Unsplashed background img 2" style="display: block; transform: translate3d(-50%, 295px, 0px);"></div>
+    </div>
+
+    <div class="container">
+        <div class="row center">
+            <div class="col s12 m12 l12">
+                <h3 class="grey-text text-darken-3">Reserve al +52 (442) 350 10 84</h3>
+                <h5 class="flow-text header col s12 light">O envie un correo y nos comunicaremos con usted:</h5>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <form action="https://formspree.io/filyvr1397@gmail.com" method="POST">
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">
+                        <h6 class="light_brown">Mensaje</h6>
+                    </label>
+                </div>
+                <div class="col s12 m6 l6">
+                    <div class="input-field">
+                        <h6 class="light_brown">Nombre</h6>
+                        <input placeholder="Alma Rosa" id="first_name" type="text" class="validate">
+
+                    </div>
+                </div>
+                <div class="col s12 m6 l6">
+                    <div class="input-field">
+                        <h6 class="light_brown">Correo Electr&oacute;nico</h6>
+                        <input placeholder="ejemplo@gmail.com" id="first_name" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 push-s1 m11 push-m2 l7 push-l3">
+                        <div class="container valign-wrapper">
+                            <div class="row">
+                                <div class="col s12">
+                                    <input type="submit" onclick="Materialize.toast('Correo enviado', 4000, 'rounded')" value="Enviar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+    <!--EJEMPLO:-->
+    <!--form action="https://formspree.io/filyvr1397@gmail.com" method="POST">
+        <input type="text" name="name">
+        <input type="email" name="_replyto">
+        <input type="submit" value="Send">
+    </form-->
+
+
+    <footer>
+        <div class=" row ">
+            <div class="col s12 m4 l2 ">
+                <a href="https://www.facebook.com/royalteapartymx/"><img class="footer_icon" src="images/footer_facebook.png " /></a>
+                <a href="https://twitter.com/Royal_TeaParty "><img class="footer_icon" src="images/footer_twitter.png " /></a>
+                <a href="https://www.instagram.com/royal.teaparty/ "><img class="footer_icon" src="images/footer_instagram.png " /></a>
+            </div>
+            <div class="col s12 m4 l8 ">
+                <br>
+                <p>&copy; Royal Tea Party 2017</p>
+            </div>
+            <div class="col s12 m4 l2 light_brown">
+                <br>
+                <p><i class="tiny material-icons">phone</i>&nbsp;+52 (442) 350 10 84</p>
+            </div>
+
+
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript " src="https://code.jquery.com/jquery-2.1.1.min.js "></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js ">
+    </script>
+
+
+    <script type="text/javascript ">
+        $(document).ready(function () {
+            $(".button-collapse ").sideNav();
+        })
+
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+
+        $('#textarea1').trigger('autoresize');
+
+        $(document).ready(function () {
+            $('.tooltipped').tooltip({
+                delay: 50
+            });
+        });
+
+        (function () {
+            $(document).ready(function () {
+                return $('#contact-form').submit(function (e) {
+                    var email, message, name;
+                    name = document.getElementById('inputName');
+                    email = document.getElementById('inputEmail');
+                    message = document.getElementById('inputMessage');
+                    if (!name.value || !email.value || !message.value) {
+                        alertify.error('Please check your entries');
+                        return false;
+                    } else {
+                        $.ajax({
+                            method: 'POST'
+                            , url: '//formspree.io/name@youremail.com'
+                            , data: $('#contact-form').serialize()
+                            , datatype: 'json'
+                        });
+                        e.preventDefault();
+                        $(this).get(0).reset();
+                        return alertify.success('Message sent');
+                    }
+                });
+            });
+
+        }).call(this);
+    </script>
+
+</body>
+
+</html>
